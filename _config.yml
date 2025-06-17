@@ -14,13 +14,16 @@ url: "https://jawe4972.github.io"
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: pretty  # Changed to standard pretty URLs
 
-# Collections (removed redundant posts declaration)
+# Permalink structure
+permalink: /blog/:year/:month/:day/:title/
+
+# Ensure posts are processed
 collections:
   posts:
     output: true
-    permalink: /blog/:path/
+    permalink: /blog/:year/:month/:day/:title/
+
 
 # Plugins
 plugins:
