@@ -62,6 +62,29 @@ As a student in Computer Science, I am actively developing proficiency in the fo
 *   **Databases:** [SQL, MongoDB]
 *   **Methodologies:** [Agile, Scrum]
 
+
+---
+## Recent Blog Posts
+
+{% for post in site.posts limit:3 %}
+  <article class="post-preview">
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+    
+    {% if post.excerpt %}
+      <div class="post-excerpt">
+        {{ post.excerpt | strip_html | truncatewords: 20 }}
+      </div>
+    {% endif %}
+    
+    <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+  </article>
+  {% unless forloop.last %}<hr>{% endunless %}
+{% endfor %}
+
+<p><a href="{{ '/blog/' | relative_url }}">View all posts →</a></p>
+
+
 ## Contact
 
 I'd love to hear from you! Whether it's about potential opportunities, collaborations, or just to connect.
