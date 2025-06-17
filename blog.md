@@ -8,12 +8,17 @@ permalink: /blog/
 
 This blog documents my journey through my current course project. I'll be sharing updates on progress, technical challenges encountered, solutions developed, and reflections on my learning.
 
-{% for post in site.posts %}
-  ## [{{ post.title }}]({{ post.url | relative_url }})
-  *{{ post.date | date: "%B %d, %Y" }}*
+## Recent Posts
 
+{% for post in site.posts %}
+<div class="post">
+  <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+  <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+  
   {{ post.excerpt }}
   
-  [Read more]({{ post.url | relative_url }})
-  <hr/>
+  <a href="{{ post.url | relative_url }}">Read more...</a>
+</div>
+<hr>
 {% endfor %}
+
