@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+permalink: /
+---
 
 # Jason Terrance Wells, MD
 ## MBA Candidate & Computer Science Student
