@@ -16,7 +16,7 @@ This site serves as a portfolio of my academic journey in computer science, my o
 *   [About Me](#about-me-detailed) 
 *   [Education](#education)
 *   [Technical Skills](#technical-skills)
-*   [Course Project Blog](/blog/)
+*   [Course Project Blog](#blog)
 *   [Projects](/projects/)
 *   [Contact](#contact)
 *   [Download CV](/assets/pdf/Jason_Wells_CV.pdf)
@@ -69,5 +69,27 @@ As a student in Computer Science, I am actively developing proficiency in the fo
 
 ## Contact
 
+I'd love to hear from you! Whether it's about potential opportunities, collaborations, or just to connect.
 
+Email: jwells@5AMsurgical.com
+LinkedIn: [(https://www.linkedin.com/in/jason-wells-89176999/)]
+GitHub: https://github.com/jawe4972
+
+## Blog
+---
+layout: default
+title: Course Project Blog
+---
+
+# Course Project Blog
+
+This blog documents my journey through my current course project. I'll be sharing updates on progress, technical challenges encountered, solutions developed, and reflections on my learning.
+
+{% for post in site.posts %}
+  ## [{{ post.title }}]({{ post.url | relative_url }})
+  *{{ post.date | date: "%B %d, %Y" }}*
+
+  {{ post.excerpt }}
+  <hr/>
+{% endfor %}
 
