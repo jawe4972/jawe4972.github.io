@@ -22,7 +22,7 @@ This blog documents my journey through my current course project. I'll be sharin
         </div>
       {% endif %}
       
-      <a href="{{ post.url | relative_url }}">Read more...</a>
+      <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
     </div>
     <hr>
   {% endfor %}
