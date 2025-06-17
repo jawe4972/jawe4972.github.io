@@ -10,10 +10,9 @@ This blog documents my journey through my current course project.
 
 ## Recent Posts
 
-{% raw %}
 {% for post in site.posts %}
   <article class="post-preview">
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
     <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
     
     {% if post.excerpt %}
@@ -22,8 +21,11 @@ This blog documents my journey through my current course project.
       </div>
     {% endif %}
     
-    <a href="{{ post.url }}" class="read-more">Read more →</a>
+    <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
   </article>
   {% unless forloop.last %}<hr>{% endunless %}
 {% endfor %}
-{% endraw %}
+
+{% if site.posts.size == 0 %}
+  <p>No posts yet. Check back soon!</p>
+{% endif %}
