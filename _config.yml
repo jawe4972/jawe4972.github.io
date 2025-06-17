@@ -7,14 +7,14 @@ email: jwells@5AMsurgical.com
 github_username: jawe4972
 linkedin_username: jason-wells-89176999
 
-# GitHub Pages settings
+# Fix the baseurl and url
 baseurl: "" 
-url: "https://github.com/jawe4972/jawe4972_2.github.io" 
+url: "https://github.com/jawe4972/jawe4972_2.github.io"  
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/  
 
 # Collections
 collections:
@@ -31,6 +31,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - vendor/
 
 # Default layouts
 defaults:
@@ -43,3 +44,6 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+# Timezone setting
+timezone: America/New_York 
