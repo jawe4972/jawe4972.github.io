@@ -7,27 +7,25 @@ email: jwells@5AMsurgical.com
 github_username: jawe4972
 linkedin_username: jason-wells-89176999
 
-# Fix the baseurl and url
-baseurl: "" 
-url: "https://jawe4972.github.io/jawe4972_2.github.io"  
+# Fixed baseurl for GitHub Pages
+baseurl: "/jawe4972_2.github.io" 
+url: "https://jawe4972.github.io"  
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: /:year/:month/:day/:title/  
+permalink: pretty  # Changed to standard pretty URLs
 
-# Collections
+# Collections (removed redundant posts declaration)
 collections:
   posts:
     output: true
+    permalink: /blog/:path/
 
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-
-# Show future posts (important for your dated post)
-future: true
 
 # Exclude files
 exclude:
@@ -36,10 +34,10 @@ exclude:
   - README.md
   - vendor/
 
-# Default layouts
+# Fixed defaults configuration
 defaults:
   - scope:
-      path: ""
+      path: "_posts"
       type: "posts"
     values:
       layout: "post"
