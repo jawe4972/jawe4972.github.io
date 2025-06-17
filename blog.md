@@ -6,10 +6,11 @@ permalink: /blog/
 
 # Course Project Blog
 
-This blog documents my journey through my current course project. I'll be sharing updates on progress, technical challenges encountered, solutions developed, and reflections on my learning.
+This blog documents my journey through my current course project.
 
 ## Recent Posts
 
+{% raw %}
 {% if site.posts.size > 0 %}
   {% for post in site.posts %}
     <div class="post-preview">
@@ -29,3 +30,4 @@ This blog documents my journey through my current course project. I'll be sharin
 {% else %}
   <p>No posts yet. Check back soon!</p>
 {% endif %}
+{% endraw %}
