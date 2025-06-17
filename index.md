@@ -70,19 +70,3 @@ I'd love to hear from you! Whether it's about potential opportunities, collabora
 *   **Email: jwells@5AMsurgical.com**
 *   **LinkedIn: https://www.linkedin.com/in/jason-wells-89176999/**
 *   **GitHub: https://github.com/jawe4972**
-
-## Blog
-
-
-# Course Project Blog
-
-This blog documents my journey through my current course project. I'll be sharing updates on progress, technical challenges encountered, solutions developed, and reflections on my learning.
-
-{% for post in site.posts %}
-  ## [{{ post.title }}]({{ post.url | relative_url }})
-  *{{ post.date | date: "%B %d, %Y" }}*
-
-  {{ post.excerpt }}
-  <hr/>
-{% endfor %}
-
