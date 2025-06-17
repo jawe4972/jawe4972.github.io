@@ -1,7 +1,3 @@
----
-layout: default 
-title: Home
----
 
 # Jason Terrance Wells, MD
 ## MBA Candidate & Computer Science Student
@@ -76,10 +72,7 @@ I'd love to hear from you! Whether it's about potential opportunities, collabora
 *   **GitHub: https://github.com/jawe4972**
 
 ## Blog
----
-layout: default
-title: Course Project Blog
----
+
 
 # Course Project Blog
 
