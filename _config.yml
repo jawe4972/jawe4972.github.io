@@ -8,20 +8,20 @@ email: jwells@5AMsurgical.com
 github_username: jawe4972
 linkedin_username: jason-wells-89176999/
 
-# For blog functionality
+# Blog configuration
+permalink: /blog/:year/:month/:day/:title/
+
+# Collections
 collections:
   posts:
     output: true
-    permalink: /blog/:year/:month/:day/:title.html
+    permalink: /:collection/:path/
 
-# Default layouts for pages and posts (depends on theme structure)
+# Defaults
 defaults:
   - scope:
-      path: "" # all files
-    values:
-      layout: "default" 
-  - scope:
-      path: "_posts"
+      path: ""
       type: "posts"
     values:
-      layout: "post" 
+      layout: "post"
+
