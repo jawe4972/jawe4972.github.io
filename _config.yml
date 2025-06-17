@@ -9,7 +9,7 @@ linkedin_username: jason-wells-89176999
 
 # Fix the baseurl and url
 baseurl: "" 
-url: "https://github.com/jawe4972/jawe4972_2.github.io"  
+url: "https://jawe4972.github.io/jawe4972_2.github.io"  
 
 # Build settings
 markdown: kramdown
@@ -25,6 +25,9 @@ collections:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+
+# Show future posts (important for your dated post)
+future: true
 
 # Exclude files
 exclude:
@@ -46,4 +49,4 @@ defaults:
       layout: "default"
 
 # Timezone setting
-timezone: America/New_York 
+timezone: America/New_York
