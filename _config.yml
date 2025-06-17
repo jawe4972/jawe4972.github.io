@@ -7,7 +7,7 @@ email: jwells@5AMsurgical.com
 github_username: jawe4972
 linkedin_username: jason-wells-89176999
 
-# Fixed baseurl for GitHub Pages
+# Fixed baseurl for GitHub Pages - should match your repository name
 baseurl: "/jawe4972_2.github.io" 
 url: "https://jawe4972.github.io"  
 
@@ -18,12 +18,11 @@ highlighter: rouge
 # Permalink structure
 permalink: /blog/:year/:month/:day/:title/
 
-# Ensure posts are processed
+# Collections
 collections:
   posts:
     output: true
     permalink: /blog/:year/:month/:day/:title/
-
 
 # Plugins
 plugins:
@@ -37,7 +36,7 @@ exclude:
   - README.md
   - vendor/
 
-# Fixed defaults configuration
+# Defaults
 defaults:
   - scope:
       path: "_posts"
@@ -52,7 +51,6 @@ defaults:
 # Timezone setting
 timezone: America/New_York
 
-# Ensure GitHub Pages builds correctly
+# GitHub Pages settings
 github:
   is_project_page: false
-
