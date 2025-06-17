@@ -51,3 +51,8 @@ defaults:
 
 # Timezone setting
 timezone: America/New_York
+
+# Ensure GitHub Pages builds correctly
+github:
+  is_project_page: false
+
