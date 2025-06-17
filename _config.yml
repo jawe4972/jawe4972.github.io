@@ -1,0 +1,27 @@
+title: Jason Terrance Wells - Portfolio
+description: MD | MBA Candidate | Computer Science Student
+theme: jekyll-theme-minimal 
+
+
+author: Jason Terrance Wells
+email: jwells@5AMsurgical.com 
+github_username: jawe4972
+linkedin_username: jason-wells-89176999/
+
+# For blog functionality
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title.html
+
+# Default layouts for pages and posts (depends on theme structure)
+defaults:
+  - scope:
+      path: "" # all files
+    values:
+      layout: "default" 
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post" 
