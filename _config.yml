@@ -7,6 +7,11 @@ email: jwells@5AMsurgical.com
 github_username: jawe4972
 linkedin_username: jason-wells-89176999
 
+# Add baseurl if you're using GitHub Pages with a repository name
+baseurl: "" 
+url: "https://jawe4972_2.github.io" 
+
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
