@@ -17,16 +17,11 @@ This blog documents my journey through my current course project. I'll be sharin
     
     {% if post.excerpt %}
       <div class="post-excerpt">
-        {{ post.excerpt | strip_html | truncatewords: 30 }}
+        {{ post.excerpt }}
       </div>
     {% endif %}
     
-    <p><a href="{{ post.url | relative_url }}" class="read-more">Read more →</a></p>
+    <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
   </article>
-  
   {% unless forloop.last %}<hr>{% endunless %}
 {% endfor %}
-
-{% if site.posts.size == 0 %}
-  <p>No posts yet. Check back soon!</p>
-{% endif %}
