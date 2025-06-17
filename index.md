@@ -12,7 +12,7 @@ This site serves as a portfolio of my academic journey in computer science, my o
 *   [About Me](#about-me-detailed) 
 *   [Education](#education)
 *   [Technical Skills](#technical-skills)
-*   [Course Project Blog](#blog)
+*   [Course Project Blog](/blog/)
 *   [Projects](/projects/)
 *   [Contact](#contact)
 *   [Download CV](/assets/pdf/Jason_Wells_CV.pdf)
