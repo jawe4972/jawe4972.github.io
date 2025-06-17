@@ -17,23 +17,20 @@ This site serves as a portfolio of my academic journey in computer science, my o
 *   [About Me](#about-me-detailed) 
 *   [Education](#education)
 *   [Technical Skills](#technical-skills)
-*   [Course Project Blog](/blog/)
-*   [Projects](/projects/)
+*   [Course Project Blog]({{ '/blog/' | relative_url }})
+*   [Projects]({{ '/projects/' | relative_url }})
 *   [Contact](#contact)
-*   [Download CV](/assets/pdf/Jason_Wells_CV.pdf)
+*   [Download CV]({{ '/assets/pdf/Jason_Wells_CV.pdf' | relative_url }})
 
 ---
 <a id="about-me-detailed"></a>
 ## About Me
-
 
 My background as a physician and surgeon has instilled in me a rigorous approach to complex challenges and a commitment to lifelong learning. As I delve into computer science and business administration, I am eager to apply this foundation to develop innovative solutions, particularly in areas where technology can enhance healthcare delivery, operational efficiency, or patient outcomes.
 
 ---
 <a id="education"></a>
 ## Education
-
-
 
 *   **MBA Candidate** (Expected Graduation: 05/2026)
     *Carnegie Mellon University, Pittsburgh, PA*
@@ -52,13 +49,11 @@ My background as a physician and surgeon has instilled in me a rigorous approach
 *   **B.S. Microbiology** (09/1998 - 04/2002)
     *University of Michigan, Ann Arbor, MI*
 
-For a complete academic history, please see my [CV](/assets/pdf/Jason_Wells_CV.pdf).
+For a complete academic history, please see my [CV]({{ '/assets/pdf/Jason_Wells_CV.pdf' | relative_url }}).
 
 ---
 <a id="technical-skills"></a>
 ## Technical Skills
-
-
 
 As a student in Computer Science, I am actively developing proficiency in the following areas:
 *   **Programming Languages:** [Python, Java, C++, JavaScript]
@@ -67,7 +62,6 @@ As a student in Computer Science, I am actively developing proficiency in the fo
 *   **Databases:** [SQL, MongoDB]
 *   **Methodologies:** [Agile, Scrum]
 
-
 ## Contact
 
 I'd love to hear from you! Whether it's about potential opportunities, collaborations, or just to connect.
@@ -75,3 +69,4 @@ I'd love to hear from you! Whether it's about potential opportunities, collabora
 *   **Email: jwells@5AMsurgical.com**
 *   **LinkedIn: https://www.linkedin.com/in/jason-wells-89176999/**
 *   **GitHub: https://github.com/jawe4972**
+
