@@ -12,7 +12,7 @@ This blog documents my journey through my current course project.
 
 {% for post in site.posts %}
   <article class="post-preview">
-    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
     <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
     
     {% if post.excerpt %}
@@ -21,7 +21,7 @@ This blog documents my journey through my current course project.
       </div>
     {% endif %}
     
-    <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+    <a href="{{ post.url | prepend: site.baseurl }}" class="read-more">Read more →</a>
   </article>
   {% unless forloop.last %}<hr>{% endunless %}
 {% endfor %}
