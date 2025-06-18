@@ -17,10 +17,10 @@ This site serves as a portfolio of my academic journey in computer science, my o
 *   [About Me](#about-me-detailed) 
 *   [Education](#education)
 *   [Technical Skills](#technical-skills)
-*   [Course Project Blog]({{ '/blog/' | relative_url }})
-*   [Projects]({{ '/projects/' | relative_url }})
-*   [Contact](#contact)
-*   [Download CV]({{ '/assets/pdf/Jason_Wells_CV.pdf' | relative_url }})
+*   [Course Project Blog]({{ site.baseurl }}/blog/)
+*   [Projects]({{ site.baseurl }}/projects/)
+*   [Contact]({{ site.baseurl }}/contact/)
+*   [Download CV]({{ site.baseurl }}/assets/pdf/Jason_Wells_CV.pdf)
 
 ---
 <a id="about-me-detailed"></a>
@@ -49,7 +49,7 @@ My background as a physician and surgeon has instilled in me a rigorous approach
 *   **B.S. Microbiology** (09/1998 - 04/2002)
     *University of Michigan, Ann Arbor, MI*
 
-For a complete academic history, please see my [CV]({{ '/assets/pdf/Jason_Wells_CV.pdf' | relative_url }}).
+For a complete academic history, please see my [CV]({{ site.baseurl }}/assets/pdf/Jason_Wells_CV.pdf).
 
 ---
 <a id="technical-skills"></a>
@@ -62,13 +62,12 @@ As a student in Computer Science, I am actively developing proficiency in the fo
 *   **Databases:** [SQL, MongoDB]
 *   **Methodologies:** [Agile, Scrum]
 
-
 ---
 ## Recent Blog Posts
 
 {% for post in site.posts limit:3 %}
   <article class="post-preview">
-    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
     <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
     
     {% if post.excerpt %}
@@ -77,13 +76,12 @@ As a student in Computer Science, I am actively developing proficiency in the fo
       </div>
     {% endif %}
     
-    <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+    <a href="{{ post.url | prepend: site.baseurl }}" class="read-more">Read more →</a>
   </article>
   {% unless forloop.last %}<hr>{% endunless %}
 {% endfor %}
 
-<p><a href="{{ '/blog/' | relative_url }}">View all posts →</a></p>
-
+<p><a href="{{ site.baseurl }}/blog/">View all posts →</a></p>
 
 ## Contact
 
@@ -92,4 +90,3 @@ I'd love to hear from you! Whether it's about potential opportunities, collabora
 *   **Email: jwells@5AMsurgical.com**
 *   **LinkedIn: https://www.linkedin.com/in/jason-wells-89176999/**
 *   **GitHub: https://github.com/jawe4972**
-
