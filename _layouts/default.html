@@ -8,12 +8,12 @@
     <title>{{ page.title | default: site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description }}">
 
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="{{ site.baseurl }}/">{{ site.title | default: site.github.repository_name }}</a></h1>
+        <h1><a href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
         
         {% if site.description %}
           <p>{{ site.description }}</p>
@@ -21,10 +21,10 @@
 
         <nav>
           <ul>
-            <li><a href="{{ site.baseurl }}/">Home</a></li>
-            <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
-            <li><a href="{{ site.baseurl }}/projects/">Projects</a></li>
-            <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/contact/">Contact</a></li>
           </ul>
         </nav>
 
@@ -44,6 +44,6 @@
       </footer>
     </div>
     
-    <script src="{{ '/assets/js/scale.fix.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
   </body>
 </html>
